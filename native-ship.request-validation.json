@@ -1,0 +1,2305 @@
+{
+  "schemaVersion": 1,
+  "fixtures": [
+    {
+      "operationId": "applyApplication",
+      "method": "POST",
+      "path": "/ats/applications/apply",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "raw",
+        "fields": [
+          {
+            "name": "bodyJson",
+            "inputName": "bodyJson",
+            "sample": {},
+            "type": "object",
+            "required": true
+          }
+        ]
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "applyApplication",
+        "method": "POST",
+        "path": "/ats/applications/apply",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "POST",
+          "url": "=/ats/applications/apply",
+          "query": [],
+          "body": [
+            {
+              "name": "bodyJson",
+              "source": "parameter"
+            }
+          ],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": [
+          "raw or blocked request body",
+          "advanced parameter bodyJson"
+        ]
+      },
+      "assertions": [
+        "retry attempts preserve request and pagination state until a response succeeds",
+        "pagination advances only after a completed page response",
+        "pagination terminates within declared page, item, elapsed-time, memory, repeated-cursor, and repeated-page budgets"
+      ]
+    },
+    {
+      "operationId": "createApplication",
+      "method": "POST",
+      "path": "/ats/applications",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "raw",
+        "fields": [
+          {
+            "name": "bodyJson",
+            "inputName": "bodyJson",
+            "sample": {},
+            "type": "object",
+            "required": true
+          }
+        ]
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "createApplication",
+        "method": "POST",
+        "path": "/ats/applications",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "POST",
+          "url": "=/ats/applications",
+          "query": [],
+          "body": [
+            {
+              "name": "bodyJson",
+              "source": "parameter"
+            }
+          ],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": [
+          "raw or blocked request body",
+          "advanced parameter bodyJson"
+        ]
+      },
+      "assertions": [
+        "retry attempts preserve request and pagination state until a response succeeds",
+        "pagination advances only after a completed page response",
+        "pagination terminates within declared page, item, elapsed-time, memory, repeated-cursor, and repeated-page budgets"
+      ]
+    },
+    {
+      "operationId": "createJobPosting",
+      "method": "POST",
+      "path": "/ats/job-postings",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "raw",
+        "fields": [
+          {
+            "name": "bodyJson",
+            "inputName": "bodyJson",
+            "sample": {},
+            "type": "object",
+            "required": true
+          }
+        ]
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "createJobPosting",
+        "method": "POST",
+        "path": "/ats/job-postings",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "POST",
+          "url": "=/ats/job-postings",
+          "query": [],
+          "body": [
+            {
+              "name": "bodyJson",
+              "source": "parameter"
+            }
+          ],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": [
+          "raw or blocked request body",
+          "advanced parameter bodyJson"
+        ]
+      },
+      "assertions": [
+        "retry attempts preserve request and pagination state until a response succeeds",
+        "pagination advances only after a completed page response",
+        "pagination terminates within declared page, item, elapsed-time, memory, repeated-cursor, and repeated-page budgets"
+      ]
+    },
+    {
+      "operationId": "duplicateJobPosting",
+      "method": "POST",
+      "path": "/ats/job-postings/duplicate",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": [
+          {
+            "name": "job_posting_id",
+            "inputName": "job_posting_id",
+            "sample": "value/id",
+            "type": "string",
+            "required": false
+          }
+        ]
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "duplicateJobPosting",
+        "method": "POST",
+        "path": "/ats/job-postings/duplicate",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "POST",
+          "url": "=/ats/job-postings/duplicate",
+          "query": [],
+          "body": [
+            {
+              "name": "job_posting_id",
+              "source": "additionalFields"
+            }
+          ],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      },
+      "assertions": [
+        "retry attempts preserve request and pagination state until a response succeeds",
+        "pagination advances only after a completed page response",
+        "pagination terminates within declared page, item, elapsed-time, memory, repeated-cursor, and repeated-page budgets"
+      ]
+    },
+    {
+      "operationId": "listApplications",
+      "method": "GET",
+      "path": "/ats/applications",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": []
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "listApplications",
+        "method": "GET",
+        "path": "/ats/applications",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "GET",
+          "url": "=/ats/applications",
+          "query": [],
+          "body": [],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      },
+      "assertions": [
+        "retry attempts preserve request and pagination state until a response succeeds",
+        "pagination advances only after a completed page response",
+        "pagination terminates within declared page, item, elapsed-time, memory, repeated-cursor, and repeated-page budgets"
+      ]
+    },
+    {
+      "operationId": "listCandidates",
+      "method": "GET",
+      "path": "/ats/candidates",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": []
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "listCandidates",
+        "method": "GET",
+        "path": "/ats/candidates",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "GET",
+          "url": "=/ats/candidates",
+          "query": [],
+          "body": [],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      },
+      "assertions": [
+        "retry attempts preserve request and pagination state until a response succeeds",
+        "pagination advances only after a completed page response",
+        "pagination terminates within declared page, item, elapsed-time, memory, repeated-cursor, and repeated-page budgets"
+      ]
+    },
+    {
+      "operationId": "listJobPostings",
+      "method": "GET",
+      "path": "/ats/job-postings",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": []
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "listJobPostings",
+        "method": "GET",
+        "path": "/ats/job-postings",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "GET",
+          "url": "=/ats/job-postings",
+          "query": [],
+          "body": [],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      },
+      "assertions": [
+        "retry attempts preserve request and pagination state until a response succeeds",
+        "pagination advances only after a completed page response",
+        "pagination terminates within declared page, item, elapsed-time, memory, repeated-cursor, and repeated-page budgets"
+      ]
+    },
+    {
+      "operationId": "clockIn",
+      "method": "POST",
+      "path": "/attendance/shifts/clock-in",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": [
+          {
+            "name": "employee_id",
+            "inputName": "employee_id",
+            "sample": "value/id",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "now",
+            "inputName": "now",
+            "sample": "2026-01-01T00:00:00.000Z",
+            "type": "string",
+            "required": false
+          }
+        ]
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "clockIn",
+        "method": "POST",
+        "path": "/attendance/shifts/clock-in",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "POST",
+          "url": "=/attendance/shifts/clock-in",
+          "query": [],
+          "body": [
+            {
+              "name": "employee_id",
+              "source": "additionalFields"
+            },
+            {
+              "name": "now",
+              "source": "additionalFields"
+            }
+          ],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      },
+      "assertions": [
+        "retry attempts preserve request and pagination state until a response succeeds",
+        "pagination advances only after a completed page response",
+        "pagination terminates within declared page, item, elapsed-time, memory, repeated-cursor, and repeated-page budgets"
+      ]
+    },
+    {
+      "operationId": "clockOut",
+      "method": "POST",
+      "path": "/attendance/shifts/clock-out",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": [
+          {
+            "name": "employee_id",
+            "inputName": "employee_id",
+            "sample": "value/id",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "now",
+            "inputName": "now",
+            "sample": "2026-01-01T00:00:00.000Z",
+            "type": "string",
+            "required": false
+          }
+        ]
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "clockOut",
+        "method": "POST",
+        "path": "/attendance/shifts/clock-out",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "POST",
+          "url": "=/attendance/shifts/clock-out",
+          "query": [],
+          "body": [
+            {
+              "name": "employee_id",
+              "source": "additionalFields"
+            },
+            {
+              "name": "now",
+              "source": "additionalFields"
+            }
+          ],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      },
+      "assertions": [
+        "retry attempts preserve request and pagination state until a response succeeds",
+        "pagination advances only after a completed page response",
+        "pagination terminates within declared page, item, elapsed-time, memory, repeated-cursor, and repeated-page budgets"
+      ]
+    },
+    {
+      "operationId": "createShift",
+      "method": "POST",
+      "path": "/attendance/shifts",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": [
+          {
+            "name": "employee_id",
+            "inputName": "employee_id",
+            "sample": "value/id",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "end_time",
+            "inputName": "end_time",
+            "sample": "2026-01-01T00:00:00.000Z",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "start_time",
+            "inputName": "start_time",
+            "sample": "2026-01-01T00:00:00.000Z",
+            "type": "string",
+            "required": false
+          }
+        ]
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "createShift",
+        "method": "POST",
+        "path": "/attendance/shifts",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "POST",
+          "url": "=/attendance/shifts",
+          "query": [],
+          "body": [
+            {
+              "name": "employee_id",
+              "source": "additionalFields"
+            },
+            {
+              "name": "end_time",
+              "source": "additionalFields"
+            },
+            {
+              "name": "start_time",
+              "source": "additionalFields"
+            }
+          ],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      },
+      "assertions": [
+        "retry attempts preserve request and pagination state until a response succeeds",
+        "pagination advances only after a completed page response",
+        "pagination terminates within declared page, item, elapsed-time, memory, repeated-cursor, and repeated-page budgets"
+      ]
+    },
+    {
+      "operationId": "listShifts",
+      "method": "GET",
+      "path": "/attendance/shifts",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": []
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "listShifts",
+        "method": "GET",
+        "path": "/attendance/shifts",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "GET",
+          "url": "=/attendance/shifts",
+          "query": [],
+          "body": [],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      },
+      "assertions": [
+        "retry attempts preserve request and pagination state until a response succeeds",
+        "pagination advances only after a completed page response",
+        "pagination terminates within declared page, item, elapsed-time, memory, repeated-cursor, and repeated-page budgets"
+      ]
+    },
+    {
+      "operationId": "createEmployee",
+      "method": "POST",
+      "path": "/employees/employees",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": [
+          {
+            "name": "email",
+            "inputName": "email",
+            "sample": "value/id",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "first_name",
+            "inputName": "first_name",
+            "sample": "value/id",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "hire_date",
+            "inputName": "hire_date",
+            "sample": "value/id",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "last_name",
+            "inputName": "last_name",
+            "sample": "value/id",
+            "type": "string",
+            "required": false
+          }
+        ]
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {
+        "fields": [
+          {
+            "name": "email",
+            "type": "string",
+            "format": "email"
+          },
+          {
+            "name": "first_name",
+            "type": "string"
+          },
+          {
+            "name": "hire_date",
+            "type": "string",
+            "format": "date"
+          },
+          {
+            "name": "id",
+            "type": "string"
+          },
+          {
+            "name": "last_name",
+            "type": "string"
+          },
+          {
+            "name": "status",
+            "type": "string"
+          }
+        ],
+        "simplifiedFields": [
+          "email",
+          "first_name",
+          "hire_date",
+          "id",
+          "last_name",
+          "status"
+        ]
+      },
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "createEmployee",
+        "method": "POST",
+        "path": "/employees/employees",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "POST",
+          "url": "=/employees/employees",
+          "query": [],
+          "body": [
+            {
+              "name": "email",
+              "source": "additionalFields"
+            },
+            {
+              "name": "first_name",
+              "source": "additionalFields"
+            },
+            {
+              "name": "hire_date",
+              "source": "additionalFields"
+            },
+            {
+              "name": "last_name",
+              "source": "additionalFields"
+            }
+          ],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {
+          "fields": [
+            {
+              "name": "email",
+              "type": "string",
+              "format": "email"
+            },
+            {
+              "name": "first_name",
+              "type": "string"
+            },
+            {
+              "name": "hire_date",
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "name": "id",
+              "type": "string"
+            },
+            {
+              "name": "last_name",
+              "type": "string"
+            },
+            {
+              "name": "status",
+              "type": "string"
+            }
+          ],
+          "simplifiedFields": [
+            "email",
+            "first_name",
+            "hire_date",
+            "id",
+            "last_name",
+            "status"
+          ]
+        },
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      },
+      "assertions": [
+        "retry attempts preserve request and pagination state until a response succeeds",
+        "pagination advances only after a completed page response",
+        "pagination terminates within declared page, item, elapsed-time, memory, repeated-cursor, and repeated-page budgets"
+      ]
+    },
+    {
+      "operationId": "deleteEmployee",
+      "method": "DELETE",
+      "path": "/employees/employees/{id}",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [
+        {
+          "name": "id",
+          "inputName": "id",
+          "sample": "value/id",
+          "location": "path",
+          "required": true,
+          "arrayFormat": "indices"
+        }
+      ],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": []
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "deleteEmployee",
+        "method": "DELETE",
+        "path": "/employees/employees/{id}",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "DELETE",
+          "url": "=/employees/employees/{{$parameter[\"id\"]}}",
+          "query": [],
+          "body": [],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      },
+      "assertions": [
+        "retry attempts preserve request and pagination state until a response succeeds",
+        "pagination advances only after a completed page response",
+        "pagination terminates within declared page, item, elapsed-time, memory, repeated-cursor, and repeated-page budgets"
+      ]
+    },
+    {
+      "operationId": "updateEmployee",
+      "method": "PUT",
+      "path": "/employees/employees/{id}",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [
+        {
+          "name": "id",
+          "inputName": "id",
+          "sample": "value/id",
+          "location": "path",
+          "required": true,
+          "arrayFormat": "indices"
+        }
+      ],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": [
+          {
+            "name": "email",
+            "inputName": "email",
+            "sample": "value/id",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "first_name",
+            "inputName": "first_name",
+            "sample": "value/id",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "hire_date",
+            "inputName": "hire_date",
+            "sample": "value/id",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "last_name",
+            "inputName": "last_name",
+            "sample": "value/id",
+            "type": "string",
+            "required": false
+          }
+        ]
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "updateEmployee",
+        "method": "PUT",
+        "path": "/employees/employees/{id}",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "PUT",
+          "url": "=/employees/employees/{{$parameter[\"id\"]}}",
+          "query": [],
+          "body": [
+            {
+              "name": "email",
+              "source": "additionalFields"
+            },
+            {
+              "name": "first_name",
+              "source": "additionalFields"
+            },
+            {
+              "name": "hire_date",
+              "source": "additionalFields"
+            },
+            {
+              "name": "last_name",
+              "source": "additionalFields"
+            }
+          ],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      },
+      "assertions": [
+        "retry attempts preserve request and pagination state until a response succeeds",
+        "pagination advances only after a completed page response",
+        "pagination terminates within declared page, item, elapsed-time, memory, repeated-cursor, and repeated-page budgets"
+      ]
+    },
+    {
+      "operationId": "createAccount",
+      "method": "POST",
+      "path": "/finance/accounts",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "raw",
+        "fields": [
+          {
+            "name": "bodyJson",
+            "inputName": "bodyJson",
+            "sample": {},
+            "type": "object",
+            "required": true
+          }
+        ]
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "createAccount",
+        "method": "POST",
+        "path": "/finance/accounts",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "POST",
+          "url": "=/finance/accounts",
+          "query": [],
+          "body": [
+            {
+              "name": "bodyJson",
+              "source": "parameter"
+            }
+          ],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": [
+          "raw or blocked request body",
+          "advanced parameter bodyJson"
+        ]
+      },
+      "assertions": [
+        "retry attempts preserve request and pagination state until a response succeeds",
+        "pagination advances only after a completed page response",
+        "pagination terminates within declared page, item, elapsed-time, memory, repeated-cursor, and repeated-page budgets"
+      ]
+    },
+    {
+      "operationId": "listAccounts",
+      "method": "GET",
+      "path": "/finance/accounts",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": []
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "listAccounts",
+        "method": "GET",
+        "path": "/finance/accounts",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "GET",
+          "url": "=/finance/accounts",
+          "query": [],
+          "body": [],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      },
+      "assertions": [
+        "retry attempts preserve request and pagination state until a response succeeds",
+        "pagination advances only after a completed page response",
+        "pagination terminates within declared page, item, elapsed-time, memory, repeated-cursor, and repeated-page budgets"
+      ]
+    },
+    {
+      "operationId": "listCredentials",
+      "method": "GET",
+      "path": "/api_public/credentials",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": []
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "listCredentials",
+        "method": "GET",
+        "path": "/api_public/credentials",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "GET",
+          "url": "=/api_public/credentials",
+          "query": [],
+          "body": [],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      },
+      "assertions": [
+        "retry attempts preserve request and pagination state until a response succeeds",
+        "pagination advances only after a completed page response",
+        "pagination terminates within declared page, item, elapsed-time, memory, repeated-cursor, and repeated-page budgets"
+      ]
+    },
+    {
+      "operationId": "createTask",
+      "method": "POST",
+      "path": "/tasks/tasks",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "raw",
+        "fields": [
+          {
+            "name": "bodyJson",
+            "inputName": "bodyJson",
+            "sample": {},
+            "type": "object",
+            "required": true
+          }
+        ]
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "createTask",
+        "method": "POST",
+        "path": "/tasks/tasks",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "POST",
+          "url": "=/tasks/tasks",
+          "query": [],
+          "body": [
+            {
+              "name": "bodyJson",
+              "source": "parameter"
+            }
+          ],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": [
+          "raw or blocked request body",
+          "advanced parameter bodyJson"
+        ]
+      },
+      "assertions": [
+        "retry attempts preserve request and pagination state until a response succeeds",
+        "pagination advances only after a completed page response",
+        "pagination terminates within declared page, item, elapsed-time, memory, repeated-cursor, and repeated-page budgets"
+      ]
+    },
+    {
+      "operationId": "listTasks",
+      "method": "GET",
+      "path": "/tasks/tasks",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": []
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "listTasks",
+        "method": "GET",
+        "path": "/tasks/tasks",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "GET",
+          "url": "=/tasks/tasks",
+          "query": [],
+          "body": [],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      },
+      "assertions": [
+        "retry attempts preserve request and pagination state until a response succeeds",
+        "pagination advances only after a completed page response",
+        "pagination terminates within declared page, item, elapsed-time, memory, repeated-cursor, and repeated-page budgets"
+      ]
+    },
+    {
+      "operationId": "createLeave",
+      "method": "POST",
+      "path": "/timeoff/leaves",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": [
+          {
+            "name": "employee_id",
+            "inputName": "employee_id",
+            "sample": "value/id",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "end_date",
+            "inputName": "end_date",
+            "sample": "value/id",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "leave_type_id",
+            "inputName": "leave_type_id",
+            "sample": "value/id",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "start_date",
+            "inputName": "start_date",
+            "sample": "value/id",
+            "type": "string",
+            "required": false
+          }
+        ]
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "createLeave",
+        "method": "POST",
+        "path": "/timeoff/leaves",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "POST",
+          "url": "=/timeoff/leaves",
+          "query": [],
+          "body": [
+            {
+              "name": "employee_id",
+              "source": "additionalFields"
+            },
+            {
+              "name": "end_date",
+              "source": "additionalFields"
+            },
+            {
+              "name": "leave_type_id",
+              "source": "additionalFields"
+            },
+            {
+              "name": "start_date",
+              "source": "additionalFields"
+            }
+          ],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      },
+      "assertions": [
+        "retry attempts preserve request and pagination state until a response succeeds",
+        "pagination advances only after a completed page response",
+        "pagination terminates within declared page, item, elapsed-time, memory, repeated-cursor, and repeated-page budgets"
+      ]
+    },
+    {
+      "operationId": "listLeaves",
+      "method": "GET",
+      "path": "/timeoff/leaves",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": []
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "listLeaves",
+        "method": "GET",
+        "path": "/timeoff/leaves",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "GET",
+          "url": "=/timeoff/leaves",
+          "query": [],
+          "body": [],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      },
+      "assertions": [
+        "retry attempts preserve request and pagination state until a response succeeds",
+        "pagination advances only after a completed page response",
+        "pagination terminates within declared page, item, elapsed-time, memory, repeated-cursor, and repeated-page budgets"
+      ]
+    },
+    {
+      "operationId": "createWebhookSubscription",
+      "method": "POST",
+      "path": "/api_public/webhook-subscriptions",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": [
+          {
+            "name": "events",
+            "inputName": "events",
+            "sample": [
+              "value/id"
+            ],
+            "type": "array",
+            "required": false
+          },
+          {
+            "name": "url",
+            "inputName": "url",
+            "sample": "value/id",
+            "type": "string",
+            "required": false
+          }
+        ]
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "createWebhookSubscription",
+        "method": "POST",
+        "path": "/api_public/webhook-subscriptions",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "POST",
+          "url": "=/api_public/webhook-subscriptions",
+          "query": [],
+          "body": [
+            {
+              "name": "events",
+              "source": "additionalFields"
+            },
+            {
+              "name": "url",
+              "source": "additionalFields"
+            }
+          ],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": [
+          "advanced parameter events"
+        ]
+      },
+      "assertions": [
+        "retry attempts preserve request and pagination state until a response succeeds",
+        "pagination advances only after a completed page response",
+        "pagination terminates within declared page, item, elapsed-time, memory, repeated-cursor, and repeated-page budgets"
+      ]
+    },
+    {
+      "operationId": "listWebhookSubscriptions",
+      "method": "GET",
+      "path": "/api_public/webhook-subscriptions",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": []
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "listWebhookSubscriptions",
+        "method": "GET",
+        "path": "/api_public/webhook-subscriptions",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "GET",
+          "url": "=/api_public/webhook-subscriptions",
+          "query": [],
+          "body": [],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      },
+      "assertions": [
+        "retry attempts preserve request and pagination state until a response succeeds",
+        "pagination advances only after a completed page response",
+        "pagination terminates within declared page, item, elapsed-time, memory, repeated-cursor, and repeated-page budgets"
+      ]
+    }
+  ],
+  "triggerFixtures": [
+    {
+      "operationId": "getEmployee",
+      "trigger": {
+        "type": "polling",
+        "sourceOperation": "getEmployee",
+        "cursorParameter": "id",
+        "defaultPollInterval": "5m"
+      },
+      "assertions": [
+        "polling trigger cursor, advancement, first-poll, empty-result, restart, deduplication, deduplication-retention, state-scope, and item-linking behavior follow the declared Trigger Contract"
+      ]
+    },
+    {
+      "operationId": "listEmployees",
+      "trigger": {
+        "type": "polling",
+        "sourceOperation": "listEmployees",
+        "cursorParameter": "id",
+        "defaultPollInterval": "5m"
+      },
+      "assertions": [
+        "polling trigger cursor, advancement, first-poll, empty-result, restart, deduplication, deduplication-retention, state-scope, and item-linking behavior follow the declared Trigger Contract"
+      ]
+    }
+  ]
+}

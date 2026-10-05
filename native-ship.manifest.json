@@ -1,0 +1,2822 @@
+{
+  "schemaVersion": 2,
+  "style": "programmatic",
+  "names": {
+    "typeName": "Factorial",
+    "nodeName": "factorial",
+    "descriptionName": "factorial",
+    "hasTriggers": false,
+    "nodeFiles": [
+      "dist/nodes/Factorial/Factorial.node.js"
+    ],
+    "credentialFiles": [
+      "dist/credentials/FactorialOAuth2Api.credentials.js"
+    ]
+  },
+  "target": {
+    "targetN8nRange": ">=1.110 <2.0",
+    "declarative": true,
+    "programmatic": true,
+    "fullVersioning": true
+  },
+  "versioning": "light",
+  "versions": [
+    1
+  ],
+  "diagnostics": [],
+  "operationContracts": [
+    {
+      "operationId": "applyApplication",
+      "method": "POST",
+      "path": "/ats/applications/apply",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "raw",
+        "fields": [
+          {
+            "name": "bodyJson",
+            "inputName": "bodyJson",
+            "type": "object",
+            "required": true
+          }
+        ]
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "applyApplication",
+        "method": "POST",
+        "path": "/ats/applications/apply",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "POST",
+          "url": "=/ats/applications/apply",
+          "query": [],
+          "body": [
+            {
+              "name": "bodyJson",
+              "source": "parameter"
+            }
+          ],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": [
+          "raw or blocked request body",
+          "advanced parameter bodyJson"
+        ]
+      }
+    },
+    {
+      "operationId": "createApplication",
+      "method": "POST",
+      "path": "/ats/applications",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "raw",
+        "fields": [
+          {
+            "name": "bodyJson",
+            "inputName": "bodyJson",
+            "type": "object",
+            "required": true
+          }
+        ]
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "createApplication",
+        "method": "POST",
+        "path": "/ats/applications",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "POST",
+          "url": "=/ats/applications",
+          "query": [],
+          "body": [
+            {
+              "name": "bodyJson",
+              "source": "parameter"
+            }
+          ],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": [
+          "raw or blocked request body",
+          "advanced parameter bodyJson"
+        ]
+      }
+    },
+    {
+      "operationId": "createJobPosting",
+      "method": "POST",
+      "path": "/ats/job-postings",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "raw",
+        "fields": [
+          {
+            "name": "bodyJson",
+            "inputName": "bodyJson",
+            "type": "object",
+            "required": true
+          }
+        ]
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "createJobPosting",
+        "method": "POST",
+        "path": "/ats/job-postings",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "POST",
+          "url": "=/ats/job-postings",
+          "query": [],
+          "body": [
+            {
+              "name": "bodyJson",
+              "source": "parameter"
+            }
+          ],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": [
+          "raw or blocked request body",
+          "advanced parameter bodyJson"
+        ]
+      }
+    },
+    {
+      "operationId": "duplicateJobPosting",
+      "method": "POST",
+      "path": "/ats/job-postings/duplicate",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": [
+          {
+            "name": "job_posting_id",
+            "inputName": "job_posting_id",
+            "type": "string",
+            "required": false
+          }
+        ]
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "duplicateJobPosting",
+        "method": "POST",
+        "path": "/ats/job-postings/duplicate",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "POST",
+          "url": "=/ats/job-postings/duplicate",
+          "query": [],
+          "body": [
+            {
+              "name": "job_posting_id",
+              "source": "additionalFields"
+            }
+          ],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      }
+    },
+    {
+      "operationId": "listApplications",
+      "method": "GET",
+      "path": "/ats/applications",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": []
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "listApplications",
+        "method": "GET",
+        "path": "/ats/applications",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "GET",
+          "url": "=/ats/applications",
+          "query": [],
+          "body": [],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      }
+    },
+    {
+      "operationId": "listCandidates",
+      "method": "GET",
+      "path": "/ats/candidates",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": []
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "listCandidates",
+        "method": "GET",
+        "path": "/ats/candidates",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "GET",
+          "url": "=/ats/candidates",
+          "query": [],
+          "body": [],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      }
+    },
+    {
+      "operationId": "listJobPostings",
+      "method": "GET",
+      "path": "/ats/job-postings",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": []
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "listJobPostings",
+        "method": "GET",
+        "path": "/ats/job-postings",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "GET",
+          "url": "=/ats/job-postings",
+          "query": [],
+          "body": [],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      }
+    },
+    {
+      "operationId": "clockIn",
+      "method": "POST",
+      "path": "/attendance/shifts/clock-in",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": [
+          {
+            "name": "employee_id",
+            "inputName": "employee_id",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "now",
+            "inputName": "now",
+            "type": "string",
+            "required": false
+          }
+        ]
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "clockIn",
+        "method": "POST",
+        "path": "/attendance/shifts/clock-in",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "POST",
+          "url": "=/attendance/shifts/clock-in",
+          "query": [],
+          "body": [
+            {
+              "name": "employee_id",
+              "source": "additionalFields"
+            },
+            {
+              "name": "now",
+              "source": "additionalFields"
+            }
+          ],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      }
+    },
+    {
+      "operationId": "clockOut",
+      "method": "POST",
+      "path": "/attendance/shifts/clock-out",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": [
+          {
+            "name": "employee_id",
+            "inputName": "employee_id",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "now",
+            "inputName": "now",
+            "type": "string",
+            "required": false
+          }
+        ]
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "clockOut",
+        "method": "POST",
+        "path": "/attendance/shifts/clock-out",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "POST",
+          "url": "=/attendance/shifts/clock-out",
+          "query": [],
+          "body": [
+            {
+              "name": "employee_id",
+              "source": "additionalFields"
+            },
+            {
+              "name": "now",
+              "source": "additionalFields"
+            }
+          ],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      }
+    },
+    {
+      "operationId": "createShift",
+      "method": "POST",
+      "path": "/attendance/shifts",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": [
+          {
+            "name": "employee_id",
+            "inputName": "employee_id",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "end_time",
+            "inputName": "end_time",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "start_time",
+            "inputName": "start_time",
+            "type": "string",
+            "required": false
+          }
+        ]
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "createShift",
+        "method": "POST",
+        "path": "/attendance/shifts",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "POST",
+          "url": "=/attendance/shifts",
+          "query": [],
+          "body": [
+            {
+              "name": "employee_id",
+              "source": "additionalFields"
+            },
+            {
+              "name": "end_time",
+              "source": "additionalFields"
+            },
+            {
+              "name": "start_time",
+              "source": "additionalFields"
+            }
+          ],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      }
+    },
+    {
+      "operationId": "listShifts",
+      "method": "GET",
+      "path": "/attendance/shifts",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": []
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "listShifts",
+        "method": "GET",
+        "path": "/attendance/shifts",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "GET",
+          "url": "=/attendance/shifts",
+          "query": [],
+          "body": [],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      }
+    },
+    {
+      "operationId": "createEmployee",
+      "method": "POST",
+      "path": "/employees/employees",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": [
+          {
+            "name": "email",
+            "inputName": "email",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "first_name",
+            "inputName": "first_name",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "hire_date",
+            "inputName": "hire_date",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "last_name",
+            "inputName": "last_name",
+            "type": "string",
+            "required": false
+          }
+        ]
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {
+        "fields": [
+          {
+            "name": "email",
+            "type": "string",
+            "format": "email"
+          },
+          {
+            "name": "first_name",
+            "type": "string"
+          },
+          {
+            "name": "hire_date",
+            "type": "string",
+            "format": "date"
+          },
+          {
+            "name": "id",
+            "type": "string"
+          },
+          {
+            "name": "last_name",
+            "type": "string"
+          },
+          {
+            "name": "status",
+            "type": "string"
+          }
+        ],
+        "simplifiedFields": [
+          "email",
+          "first_name",
+          "hire_date",
+          "id",
+          "last_name",
+          "status"
+        ]
+      },
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "createEmployee",
+        "method": "POST",
+        "path": "/employees/employees",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "POST",
+          "url": "=/employees/employees",
+          "query": [],
+          "body": [
+            {
+              "name": "email",
+              "source": "additionalFields"
+            },
+            {
+              "name": "first_name",
+              "source": "additionalFields"
+            },
+            {
+              "name": "hire_date",
+              "source": "additionalFields"
+            },
+            {
+              "name": "last_name",
+              "source": "additionalFields"
+            }
+          ],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {
+          "fields": [
+            {
+              "name": "email",
+              "type": "string",
+              "format": "email"
+            },
+            {
+              "name": "first_name",
+              "type": "string"
+            },
+            {
+              "name": "hire_date",
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "name": "id",
+              "type": "string"
+            },
+            {
+              "name": "last_name",
+              "type": "string"
+            },
+            {
+              "name": "status",
+              "type": "string"
+            }
+          ],
+          "simplifiedFields": [
+            "email",
+            "first_name",
+            "hire_date",
+            "id",
+            "last_name",
+            "status"
+          ]
+        },
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      }
+    },
+    {
+      "operationId": "deleteEmployee",
+      "method": "DELETE",
+      "path": "/employees/employees/{id}",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [
+        {
+          "name": "id",
+          "inputName": "id",
+          "location": "path",
+          "required": true,
+          "arrayFormat": "indices"
+        }
+      ],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": []
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "deleteEmployee",
+        "method": "DELETE",
+        "path": "/employees/employees/{id}",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "DELETE",
+          "url": "=/employees/employees/{{$parameter[\"id\"]}}",
+          "query": [],
+          "body": [],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      }
+    },
+    {
+      "operationId": "getEmployee",
+      "method": "GET",
+      "path": "/employees/employees/{id}",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [
+        {
+          "name": "id",
+          "inputName": "id",
+          "location": "path",
+          "required": true,
+          "arrayFormat": "indices"
+        }
+      ],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": []
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {
+        "fields": [
+          {
+            "name": "email",
+            "type": "string",
+            "format": "email"
+          },
+          {
+            "name": "first_name",
+            "type": "string"
+          },
+          {
+            "name": "hire_date",
+            "type": "string",
+            "format": "date"
+          },
+          {
+            "name": "id",
+            "type": "string"
+          },
+          {
+            "name": "last_name",
+            "type": "string"
+          },
+          {
+            "name": "status",
+            "type": "string"
+          }
+        ],
+        "simplifiedFields": [
+          "email",
+          "first_name",
+          "hire_date",
+          "id",
+          "last_name",
+          "status"
+        ]
+      },
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "getEmployee",
+        "method": "GET",
+        "path": "/employees/employees/{id}",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "GET",
+          "url": "=/employees/employees/{{$parameter[\"id\"]}}",
+          "query": [],
+          "body": [],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {
+          "fields": [
+            {
+              "name": "email",
+              "type": "string",
+              "format": "email"
+            },
+            {
+              "name": "first_name",
+              "type": "string"
+            },
+            {
+              "name": "hire_date",
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "name": "id",
+              "type": "string"
+            },
+            {
+              "name": "last_name",
+              "type": "string"
+            },
+            {
+              "name": "status",
+              "type": "string"
+            }
+          ],
+          "simplifiedFields": [
+            "email",
+            "first_name",
+            "hire_date",
+            "id",
+            "last_name",
+            "status"
+          ]
+        },
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      },
+      "trigger": {
+        "type": "polling",
+        "sourceOperation": "getEmployee",
+        "cursorParameter": "id",
+        "defaultPollInterval": "5m"
+      }
+    },
+    {
+      "operationId": "listEmployees",
+      "method": "GET",
+      "path": "/employees/employees",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": []
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {
+        "fields": [
+          {
+            "name": "email",
+            "type": "string",
+            "format": "email"
+          },
+          {
+            "name": "first_name",
+            "type": "string"
+          },
+          {
+            "name": "hire_date",
+            "type": "string",
+            "format": "date"
+          },
+          {
+            "name": "id",
+            "type": "string"
+          },
+          {
+            "name": "last_name",
+            "type": "string"
+          },
+          {
+            "name": "status",
+            "type": "string"
+          }
+        ],
+        "simplifiedFields": [
+          "email",
+          "first_name",
+          "hire_date",
+          "id",
+          "last_name",
+          "status"
+        ]
+      },
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "listEmployees",
+        "method": "GET",
+        "path": "/employees/employees",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "GET",
+          "url": "=/employees/employees",
+          "query": [],
+          "body": [],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {
+          "fields": [
+            {
+              "name": "email",
+              "type": "string",
+              "format": "email"
+            },
+            {
+              "name": "first_name",
+              "type": "string"
+            },
+            {
+              "name": "hire_date",
+              "type": "string",
+              "format": "date"
+            },
+            {
+              "name": "id",
+              "type": "string"
+            },
+            {
+              "name": "last_name",
+              "type": "string"
+            },
+            {
+              "name": "status",
+              "type": "string"
+            }
+          ],
+          "simplifiedFields": [
+            "email",
+            "first_name",
+            "hire_date",
+            "id",
+            "last_name",
+            "status"
+          ]
+        },
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      },
+      "trigger": {
+        "type": "polling",
+        "sourceOperation": "listEmployees",
+        "cursorParameter": "id",
+        "defaultPollInterval": "5m"
+      }
+    },
+    {
+      "operationId": "updateEmployee",
+      "method": "PUT",
+      "path": "/employees/employees/{id}",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [
+        {
+          "name": "id",
+          "inputName": "id",
+          "location": "path",
+          "required": true,
+          "arrayFormat": "indices"
+        }
+      ],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": [
+          {
+            "name": "email",
+            "inputName": "email",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "first_name",
+            "inputName": "first_name",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "hire_date",
+            "inputName": "hire_date",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "last_name",
+            "inputName": "last_name",
+            "type": "string",
+            "required": false
+          }
+        ]
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "updateEmployee",
+        "method": "PUT",
+        "path": "/employees/employees/{id}",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "PUT",
+          "url": "=/employees/employees/{{$parameter[\"id\"]}}",
+          "query": [],
+          "body": [
+            {
+              "name": "email",
+              "source": "additionalFields"
+            },
+            {
+              "name": "first_name",
+              "source": "additionalFields"
+            },
+            {
+              "name": "hire_date",
+              "source": "additionalFields"
+            },
+            {
+              "name": "last_name",
+              "source": "additionalFields"
+            }
+          ],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      }
+    },
+    {
+      "operationId": "createAccount",
+      "method": "POST",
+      "path": "/finance/accounts",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "raw",
+        "fields": [
+          {
+            "name": "bodyJson",
+            "inputName": "bodyJson",
+            "type": "object",
+            "required": true
+          }
+        ]
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "createAccount",
+        "method": "POST",
+        "path": "/finance/accounts",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "POST",
+          "url": "=/finance/accounts",
+          "query": [],
+          "body": [
+            {
+              "name": "bodyJson",
+              "source": "parameter"
+            }
+          ],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": [
+          "raw or blocked request body",
+          "advanced parameter bodyJson"
+        ]
+      }
+    },
+    {
+      "operationId": "listAccounts",
+      "method": "GET",
+      "path": "/finance/accounts",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": []
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "listAccounts",
+        "method": "GET",
+        "path": "/finance/accounts",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "GET",
+          "url": "=/finance/accounts",
+          "query": [],
+          "body": [],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      }
+    },
+    {
+      "operationId": "listCredentials",
+      "method": "GET",
+      "path": "/api_public/credentials",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": []
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "listCredentials",
+        "method": "GET",
+        "path": "/api_public/credentials",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "GET",
+          "url": "=/api_public/credentials",
+          "query": [],
+          "body": [],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      }
+    },
+    {
+      "operationId": "createTask",
+      "method": "POST",
+      "path": "/tasks/tasks",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "raw",
+        "fields": [
+          {
+            "name": "bodyJson",
+            "inputName": "bodyJson",
+            "type": "object",
+            "required": true
+          }
+        ]
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "createTask",
+        "method": "POST",
+        "path": "/tasks/tasks",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "POST",
+          "url": "=/tasks/tasks",
+          "query": [],
+          "body": [
+            {
+              "name": "bodyJson",
+              "source": "parameter"
+            }
+          ],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": [
+          "raw or blocked request body",
+          "advanced parameter bodyJson"
+        ]
+      }
+    },
+    {
+      "operationId": "listTasks",
+      "method": "GET",
+      "path": "/tasks/tasks",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": []
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "listTasks",
+        "method": "GET",
+        "path": "/tasks/tasks",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "GET",
+          "url": "=/tasks/tasks",
+          "query": [],
+          "body": [],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      }
+    },
+    {
+      "operationId": "createLeave",
+      "method": "POST",
+      "path": "/timeoff/leaves",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": [
+          {
+            "name": "employee_id",
+            "inputName": "employee_id",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "end_date",
+            "inputName": "end_date",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "leave_type_id",
+            "inputName": "leave_type_id",
+            "type": "string",
+            "required": false
+          },
+          {
+            "name": "start_date",
+            "inputName": "start_date",
+            "type": "string",
+            "required": false
+          }
+        ]
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "createLeave",
+        "method": "POST",
+        "path": "/timeoff/leaves",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "POST",
+          "url": "=/timeoff/leaves",
+          "query": [],
+          "body": [
+            {
+              "name": "employee_id",
+              "source": "additionalFields"
+            },
+            {
+              "name": "end_date",
+              "source": "additionalFields"
+            },
+            {
+              "name": "leave_type_id",
+              "source": "additionalFields"
+            },
+            {
+              "name": "start_date",
+              "source": "additionalFields"
+            }
+          ],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      }
+    },
+    {
+      "operationId": "listLeaves",
+      "method": "GET",
+      "path": "/timeoff/leaves",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": []
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "listLeaves",
+        "method": "GET",
+        "path": "/timeoff/leaves",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "GET",
+          "url": "=/timeoff/leaves",
+          "query": [],
+          "body": [],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      }
+    },
+    {
+      "operationId": "createWebhookSubscription",
+      "method": "POST",
+      "path": "/api_public/webhook-subscriptions",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": [
+          {
+            "name": "events",
+            "inputName": "events",
+            "type": "array",
+            "required": false
+          },
+          {
+            "name": "url",
+            "inputName": "url",
+            "type": "string",
+            "required": false
+          }
+        ]
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "createWebhookSubscription",
+        "method": "POST",
+        "path": "/api_public/webhook-subscriptions",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "POST",
+          "url": "=/api_public/webhook-subscriptions",
+          "query": [],
+          "body": [
+            {
+              "name": "events",
+              "source": "additionalFields"
+            },
+            {
+              "name": "url",
+              "source": "additionalFields"
+            }
+          ],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": [
+          "advanced parameter events"
+        ]
+      }
+    },
+    {
+      "operationId": "listWebhookSubscriptions",
+      "method": "GET",
+      "path": "/api_public/webhook-subscriptions",
+      "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+      "authentication": [
+        {
+          "schemes": [
+            "oauth2"
+          ],
+          "scopes": []
+        }
+      ],
+      "parameters": [],
+      "request": {
+        "contentType": "application/json",
+        "representation": "structured",
+        "fields": []
+      },
+      "retry": {},
+      "pagination": {
+        "style": "none"
+      },
+      "response": {},
+      "errors": [
+        {
+          "status": "400",
+          "title": "Bad request"
+        },
+        {
+          "status": "401",
+          "title": "Unauthorized"
+        }
+      ],
+      "requestPlan": {
+        "operationId": "listWebhookSubscriptions",
+        "method": "GET",
+        "path": "/api_public/webhook-subscriptions",
+        "serverId": "documentServer1HttpsApiFactorialhrComApi20260101Resources",
+        "request": {
+          "method": "GET",
+          "url": "=/api_public/webhook-subscriptions",
+          "query": [],
+          "body": [],
+          "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          }
+        },
+        "authentication": [
+          {
+            "schemes": [
+              "oauth2"
+            ],
+            "scopes": []
+          }
+        ],
+        "retry": {},
+        "pagination": {
+          "style": "none"
+        },
+        "response": {},
+        "errors": [
+          {
+            "status": "400",
+            "title": "Bad request"
+          },
+          {
+            "status": "401",
+            "title": "Unauthorized"
+          }
+        ],
+        "unsupportedSemantics": []
+      }
+    }
+  ],
+  "presentationProfile": {
+    "version": 1,
+    "title": "Factorial",
+    "description": "Factorial brings HR, payroll, time tracking, talent, and finance processes into one platform.",
+    "documentationUrl": "https://api.factorialhr.com/api/2026-01-01/resources",
+    "artwork": {
+      "iconData": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"588.941\" height=\"587.543\" viewBox=\"150.555 125.162 499.931 498.744\"><path fill=\"#ff355e\" d=\"M603.7 520.3l-8.9 12.4-34.4-25 7-9.4c41-54.2 52-126.7 30-190.7-25-72.6-88.6-126.2-164.5-138-71.3-11.2-146.2 17.2-191.9 73.4-12 14.8-22.9 32.6-30.4 50.1-29 67.7-18.1 148 25.8 206.8l5.8 7.8-33.7 24.7-4-4.7c-2.2-2.6-9-12.9-15.2-23-18.4-30.2-30.8-63.5-35.2-98.8-9.9-78.4 18.3-158.1 75.7-212.6 55.1-52.5 132.1-76.2 207.1-65.7 83.7 11.6 157.3 67.7 192 144.5 36.3 80.5 26.1 176.6-25.2 248.2z\"/><path fill=\"#ff355e\" d=\"M406.1 513.6l25.4 .4 21.4 4.6c34.9 7.4 68.9 21.8 97.5 43.2l8.5 6.3-7.5 5.7c-49.5 38-114.9 55.6-176.8 48.6-36.9-4.1-74.4-16.9-105.8-36.7-5.4-3.4-13.1-8.8-17.2-11.9l-7.5-5.7 5-3.8c19.3-14.9 41.9-27.1 64.5-36.2 18-7.2 37.7-11.9 57-13.9 5.7-.6 21-.9 35.5-.6z\"/><path fill=\"#ff355e\" d=\"M387.7 275.7c43.5-6.6 86.7 19.5 100.8 61.4 13.7 40.6-2.9 86.4-39.8 108.5-37 22.1-85.9 15-115-16.7-29.7-32.3-32-82.4-5.9-117.6 14.2-19.1 36.5-32.1 59.9-35.6z\"/></svg>"
+    },
+    "resources": {
+      "ats": {
+        "source": {
+          "name": "ats"
+        },
+        "displayName": "ATS"
+      },
+      "attendance": {
+        "source": {
+          "name": "attendance"
+        },
+        "displayName": "Attendance"
+      },
+      "employees": {
+        "source": {
+          "name": "employees"
+        },
+        "displayName": "Employees"
+      },
+      "finance": {
+        "source": {
+          "name": "finance"
+        },
+        "displayName": "Finance"
+      },
+      "system": {
+        "source": {
+          "name": "system"
+        },
+        "displayName": "System"
+      },
+      "tasks": {
+        "source": {
+          "name": "tasks"
+        },
+        "displayName": "Tasks"
+      },
+      "timeOff": {
+        "source": {
+          "name": "timeOff"
+        },
+        "displayName": "Time Off"
+      },
+      "webhooks": {
+        "source": {
+          "name": "webhooks"
+        },
+        "displayName": "Webhooks"
+      }
+    },
+    "operations": {
+      "applyApplication": {
+        "source": {
+          "id": "applyApplication",
+          "method": "POST",
+          "path": "/ats/applications/apply"
+        },
+        "displayName": "Apply for a position",
+        "description": "Submit an application for a position through Factorial ATS.",
+        "hidden": false,
+        "resource": "ats"
+      },
+      "clockIn": {
+        "source": {
+          "id": "clockIn",
+          "method": "POST",
+          "path": "/attendance/shifts/clock-in"
+        },
+        "displayName": "Clock in",
+        "description": "Record the start of a shift for an employee. The shift stays open until clocked out.",
+        "hidden": false,
+        "resource": "attendance"
+      },
+      "clockOut": {
+        "source": {
+          "id": "clockOut",
+          "method": "POST",
+          "path": "/attendance/shifts/clock-out"
+        },
+        "displayName": "Clock out",
+        "description": "Complete an open shift by recording its clock-out time. The shift must have been started with the clock-in endpoint.",
+        "hidden": false,
+        "resource": "attendance"
+      },
+      "createAccount": {
+        "source": {
+          "id": "createAccount",
+          "method": "POST",
+          "path": "/finance/accounts"
+        },
+        "displayName": "Create finance account",
+        "description": "Create a finance account in Factorial.",
+        "hidden": false,
+        "resource": "finance"
+      },
+      "createApplication": {
+        "source": {
+          "id": "createApplication",
+          "method": "POST",
+          "path": "/ats/applications"
+        },
+        "displayName": "Create application",
+        "description": "Create an ATS application for a candidate and job posting.",
+        "hidden": false,
+        "resource": "ats"
+      },
+      "createEmployee": {
+        "source": {
+          "id": "createEmployee",
+          "method": "POST",
+          "path": "/employees/employees"
+        },
+        "displayName": "Create employee",
+        "description": "Create an employee record with the supplied name, email, and hire date.",
+        "hidden": false,
+        "resource": "employees"
+      },
+      "createJobPosting": {
+        "source": {
+          "id": "createJobPosting",
+          "method": "POST",
+          "path": "/ats/job-postings"
+        },
+        "displayName": "Create job posting",
+        "description": "Create a job posting in Factorial ATS.",
+        "hidden": false,
+        "resource": "ats"
+      },
+      "createLeave": {
+        "source": {
+          "id": "createLeave",
+          "method": "POST",
+          "path": "/timeoff/leaves"
+        },
+        "displayName": "Create leave request",
+        "description": "Create a leave request with an employee ID, date range, and leave type.",
+        "hidden": false,
+        "resource": "timeOff"
+      },
+      "createShift": {
+        "source": {
+          "id": "createShift",
+          "method": "POST",
+          "path": "/attendance/shifts"
+        },
+        "displayName": "Create shift",
+        "description": "Create a shift using an employee ID and start and end times.",
+        "hidden": false,
+        "resource": "attendance"
+      },
+      "createTask": {
+        "source": {
+          "id": "createTask",
+          "method": "POST",
+          "path": "/tasks/tasks"
+        },
+        "displayName": "Create task",
+        "description": "Create a task in Factorial.",
+        "hidden": false,
+        "resource": "tasks"
+      },
+      "createWebhookSubscription": {
+        "source": {
+          "id": "createWebhookSubscription",
+          "method": "POST",
+          "path": "/api_public/webhook-subscriptions"
+        },
+        "displayName": "Create webhook subscription",
+        "description": "Create a webhook subscription with a destination URL and selected events.",
+        "hidden": false,
+        "removed": true,
+        "resource": "webhooks"
+      },
+      "deleteEmployee": {
+        "source": {
+          "id": "deleteEmployee",
+          "method": "DELETE",
+          "path": "/employees/employees/{id}"
+        },
+        "displayName": "Delete employee",
+        "description": "Delete the employee record identified by its ID.",
+        "hidden": false,
+        "resource": "employees"
+      },
+      "duplicateJobPosting": {
+        "source": {
+          "id": "duplicateJobPosting",
+          "method": "POST",
+          "path": "/ats/job-postings/duplicate"
+        },
+        "displayName": "Duplicate job posting",
+        "description": "Create a copy of an existing job posting.",
+        "hidden": false,
+        "resource": "ats"
+      },
+      "getEmployee": {
+        "source": {
+          "id": "getEmployee",
+          "method": "GET",
+          "path": "/employees/employees/{id}"
+        },
+        "displayName": "Get employee",
+        "description": "Retrieve the employee record identified by its ID.",
+        "hidden": false,
+        "resource": "employees"
+      },
+      "listAccounts": {
+        "source": {
+          "id": "listAccounts",
+          "method": "GET",
+          "path": "/finance/accounts"
+        },
+        "displayName": "List finance accounts",
+        "description": "List finance accounts in Factorial.",
+        "hidden": false,
+        "resource": "finance"
+      },
+      "listApplications": {
+        "source": {
+          "id": "listApplications",
+          "method": "GET",
+          "path": "/ats/applications"
+        },
+        "displayName": "List applications",
+        "description": "List job applications with their candidate and job-posting details.",
+        "hidden": false,
+        "resource": "ats"
+      },
+      "listCandidates": {
+        "source": {
+          "id": "listCandidates",
+          "method": "GET",
+          "path": "/ats/candidates"
+        },
+        "displayName": "List candidates",
+        "description": "List candidate records available to your account. Visibility depends on API credential permissions and hiring-manager access.",
+        "hidden": false,
+        "resource": "ats"
+      },
+      "listCredentials": {
+        "source": {
+          "id": "listCredentials",
+          "method": "GET",
+          "path": "/api_public/credentials"
+        },
+        "displayName": "List API credentials",
+        "description": "List API credentials available to the authenticated account.",
+        "hidden": false,
+        "removed": true,
+        "resource": "system"
+      },
+      "listEmployees": {
+        "source": {
+          "id": "listEmployees",
+          "method": "GET",
+          "path": "/employees/employees"
+        },
+        "displayName": "List employees",
+        "description": "List employee records visible to the authenticated user. Returned details depend on permissions assigned to the API user.",
+        "hidden": false,
+        "resource": "employees"
+      },
+      "listJobPostings": {
+        "source": {
+          "id": "listJobPostings",
+          "method": "GET",
+          "path": "/ats/job-postings"
+        },
+        "displayName": "List job postings",
+        "description": "List job postings in Factorial ATS.",
+        "hidden": false,
+        "resource": "ats"
+      },
+      "listLeaves": {
+        "source": {
+          "id": "listLeaves",
+          "method": "GET",
+          "path": "/timeoff/leaves"
+        },
+        "displayName": "List leaves",
+        "description": "Retrieve employee leave requests from Factorial.",
+        "hidden": false,
+        "resource": "timeOff"
+      },
+      "listShifts": {
+        "source": {
+          "id": "listShifts",
+          "method": "GET",
+          "path": "/attendance/shifts"
+        },
+        "displayName": "List shifts",
+        "description": "List employee shift records in Factorial.",
+        "hidden": false,
+        "resource": "attendance"
+      },
+      "listTasks": {
+        "source": {
+          "id": "listTasks",
+          "method": "GET",
+          "path": "/tasks/tasks"
+        },
+        "displayName": "List tasks",
+        "description": "List task records in Factorial.",
+        "hidden": false,
+        "resource": "tasks"
+      },
+      "listWebhookSubscriptions": {
+        "source": {
+          "id": "listWebhookSubscriptions",
+          "method": "GET",
+          "path": "/api_public/webhook-subscriptions"
+        },
+        "displayName": "List webhook subscriptions",
+        "description": "List webhook subscriptions configured for the Factorial account.",
+        "hidden": false,
+        "removed": true,
+        "resource": "webhooks"
+      },
+      "updateEmployee": {
+        "source": {
+          "id": "updateEmployee",
+          "method": "PUT",
+          "path": "/employees/employees/{id}"
+        },
+        "displayName": "Update employee",
+        "description": "Update an employee record by ID using the supplied employee details.",
+        "hidden": false,
+        "resource": "employees"
+      }
+    },
+    "credentials": {
+      "oauth2": {
+        "source": {
+          "id": "oauth2",
+          "type": "oauth2"
+        }
+      }
+    }
+  }
+}
